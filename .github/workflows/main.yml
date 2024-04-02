@@ -25,7 +25,7 @@ jobs:
           host: ${{ secrets.HOST_DNS }}
           username: ${{secrets.USERNAME }}
           key: ${{ secrets.EC2_PEM_KEY }}
-          scripts: |
+          script: |
             sudo apt-get update
             sudo apt-get install -y apache2
             sudo systemctl start apache2
